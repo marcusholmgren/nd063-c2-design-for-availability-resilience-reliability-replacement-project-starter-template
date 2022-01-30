@@ -1,0 +1,21 @@
+Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for this Multi-AZ
+
+-----------------------------------------------
+Minimum RTO for a single AZ outage
+
+With a single instance AZ configuration the limit is how long it takes to start a new RDS instance in a different AZ. I guess this could be mitigated within a 10 minute window.
+
+-----------------------------------------------
+Minimum RTO for a single region outage
+
+In the occurence that a region needs to switch and promote instanceses I guess there will be some downtime in about 30 minutes timeframe.
+
+-----------------------------------------------
+Minimum RPO for a single AZ outage
+
+This would probably have limited effect on the instance, maybe a couple of minutes.
+
+-----------------------------------------------
+Minimum RPO for a single region outage
+
+This would have higher impact with unavailable instances in the range of a couple of minutes to a few hours.
